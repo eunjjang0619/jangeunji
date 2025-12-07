@@ -1,26 +1,42 @@
-gdjs._49Code = {};
-gdjs._49Code.localVariables = [];
-gdjs._49Code.idToCallbackMap = new Map();
-gdjs._49Code.GDmy_9595dessertObjects1= [];
-gdjs._49Code.GDmy_9595dessertObjects2= [];
-gdjs._49Code.GDpress_9595enter_9595the_9595startObjects1= [];
-gdjs._49Code.GDpress_9595enter_9595the_9595startObjects2= [];
-gdjs._49Code.GDNewSpriteObjects1= [];
-gdjs._49Code.GDNewSpriteObjects2= [];
-gdjs._49Code.GDNewSprite2Objects1= [];
-gdjs._49Code.GDNewSprite2Objects2= [];
+gdjs.Untitled_32sceneCode = {};
+gdjs.Untitled_32sceneCode.localVariables = [];
+gdjs.Untitled_32sceneCode.idToCallbackMap = new Map();
+gdjs.Untitled_32sceneCode.GD_9549884_9551089_9548176_9544221Objects1= [];
+gdjs.Untitled_32sceneCode.GD_9549884_9551089_9548176_9544221Objects2= [];
+gdjs.Untitled_32sceneCode.GD_9549884_9551089_9548260_9553948Objects1= [];
+gdjs.Untitled_32sceneCode.GD_9549884_9551089_9548260_9553948Objects2= [];
 
 
-gdjs._49Code.eventsList0 = function(runtimeScene) {
+gdjs.Untitled_32sceneCode.mapOfGDgdjs_9546Untitled_959532sceneCode_9546GD_95959549884_95959551089_95959548260_95959553948Objects1Objects = Hashtable.newFrom({"시작버튼": gdjs.Untitled_32sceneCode.GD_9549884_9551089_9548260_9553948Objects1});
+gdjs.Untitled_32sceneCode.eventsList0 = function(runtimeScene) {
 
 {
 
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "Return");
+isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 if (isConditionTrue_0) {
-{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "2", false);
+{gdjs.evtTools.sound.playSound(runtimeScene, "시퀀스 01.mp3", true, 100, 1);
+}
+}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("시작버튼"), gdjs.Untitled_32sceneCode.GD_9549884_9551089_9548260_9553948Objects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.Untitled_32sceneCode.mapOfGDgdjs_9546Untitled_959532sceneCode_9546GD_95959549884_95959551089_95959548260_95959553948Objects1Objects, runtimeScene, true, false);
+}
+if (isConditionTrue_0) {
+{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Untitled scene2", false);
 }
 }
 
@@ -29,31 +45,23 @@ if (isConditionTrue_0) {
 
 };
 
-gdjs._49Code.func = function(runtimeScene) {
+gdjs.Untitled_32sceneCode.func = function(runtimeScene) {
 runtimeScene.getOnceTriggers().startNewFrame();
 
-gdjs._49Code.GDmy_9595dessertObjects1.length = 0;
-gdjs._49Code.GDmy_9595dessertObjects2.length = 0;
-gdjs._49Code.GDpress_9595enter_9595the_9595startObjects1.length = 0;
-gdjs._49Code.GDpress_9595enter_9595the_9595startObjects2.length = 0;
-gdjs._49Code.GDNewSpriteObjects1.length = 0;
-gdjs._49Code.GDNewSpriteObjects2.length = 0;
-gdjs._49Code.GDNewSprite2Objects1.length = 0;
-gdjs._49Code.GDNewSprite2Objects2.length = 0;
+gdjs.Untitled_32sceneCode.GD_9549884_9551089_9548176_9544221Objects1.length = 0;
+gdjs.Untitled_32sceneCode.GD_9549884_9551089_9548176_9544221Objects2.length = 0;
+gdjs.Untitled_32sceneCode.GD_9549884_9551089_9548260_9553948Objects1.length = 0;
+gdjs.Untitled_32sceneCode.GD_9549884_9551089_9548260_9553948Objects2.length = 0;
 
-gdjs._49Code.eventsList0(runtimeScene);
-gdjs._49Code.GDmy_9595dessertObjects1.length = 0;
-gdjs._49Code.GDmy_9595dessertObjects2.length = 0;
-gdjs._49Code.GDpress_9595enter_9595the_9595startObjects1.length = 0;
-gdjs._49Code.GDpress_9595enter_9595the_9595startObjects2.length = 0;
-gdjs._49Code.GDNewSpriteObjects1.length = 0;
-gdjs._49Code.GDNewSpriteObjects2.length = 0;
-gdjs._49Code.GDNewSprite2Objects1.length = 0;
-gdjs._49Code.GDNewSprite2Objects2.length = 0;
+gdjs.Untitled_32sceneCode.eventsList0(runtimeScene);
+gdjs.Untitled_32sceneCode.GD_9549884_9551089_9548176_9544221Objects1.length = 0;
+gdjs.Untitled_32sceneCode.GD_9549884_9551089_9548176_9544221Objects2.length = 0;
+gdjs.Untitled_32sceneCode.GD_9549884_9551089_9548260_9553948Objects1.length = 0;
+gdjs.Untitled_32sceneCode.GD_9549884_9551089_9548260_9553948Objects2.length = 0;
 
 
 return;
 
 }
 
-gdjs['_49Code'] = gdjs._49Code;
+gdjs['Untitled_32sceneCode'] = gdjs.Untitled_32sceneCode;
